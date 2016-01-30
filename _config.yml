@@ -7,9 +7,10 @@
 
 # Site settings
 title: Matt Couchman | Front end web developer | Birmingham
-email: 
+email:
 description: Matt Couchman | Front end web developer based in Birmingham, West Midlands. Specialising in CSS, Javascript, accessibility and performance.
 baseurl: "" # the subpath of your site, e.g. /blog
+timezone: "Europe/London"
 excerpt_separator: <!--excerpt-->
 url: "http://www.mattcouchman.co.uk" # the base hostname & protocol for your site
 twitter_username: mattcouchman
