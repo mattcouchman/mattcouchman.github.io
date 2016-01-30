@@ -1,0 +1,14 @@
+/**
+@name Link
+@description Standard links
+*/
+
+.link {
+    &--reverse {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

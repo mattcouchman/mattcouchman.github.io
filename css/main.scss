@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/** Project settings */
+@import 'settings';
+
+/** Base styles */
+@import 'base/reset';
+@import 'base/typography';
+
+/** Component styles */
+@import 'components/header';
+@import 'components/footer';
+@import 'components/section';
+@import 'components/article';
+@import 'components/link';
+@import 'components/profile';
+@import 'components/syntax-highlighting';
+
+/** Utilities */
+.u-color-alpha {
+    color: $color-alpha;
+}

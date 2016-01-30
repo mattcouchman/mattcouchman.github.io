@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+    <article>
+        <h3>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+        {{ post.excerpt }}
+        <!--<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+    </article>
+{% endfor %}
