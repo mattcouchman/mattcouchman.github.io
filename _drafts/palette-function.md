@@ -5,15 +5,17 @@ date:   2016-02-02 17:14:12
 description: Sass palette function for working with color variables and palettes.
 ---
 
-Colour palettes in (S)CSS. I've often struggled naming my colour variables in large projects. I generally tend to avoid actual colour names, to guard against future changes to brand colours.
+When it comes to creating a Sass structure for large applications I always wonder about best practices in terms of naming the colours and palettes. I generally tend to avoid actual colour names, to guard against future changes to brand colours.
 
 For example, if we have a website consisting of 100s of pages and classes such as `.bg-blue`, what happens when the company decides to rebrand to red? We have to go through all the pages and change `.bg-blue` to `.bg-red` - not ideal.
 
-So I start with calling my brand colours something abstract, like `.bg-alpha`. That way, we can make 'alpha' any colour we want, without it impacting the CSS or markup.
+Likewise in your Sass files, you would have to root through all your files to replace `$blue` with `$red`.
 
 <!--excerpt-->
 
-So how do we go about naming our variables in our Sass files? We could just go down a route like `$color-alpha: #ff0;`, which works absolutely fine. However we can get a bit more clever about it. Sass comes with really powerful features like arrays, functions and loops, and with a combination of those we can create a smarter way of referencing our colours throughout our stylesheets.
+So I usually en up calling my brand colours something abstract, like `.bg-alpha`. That way, we can make 'alpha' any colour we want, without it impacting the CSS or markup.
+
+But recently I've been thinking about how we can be a bit more clever in terms of naming both our colours and colour palettes. So how do we go about naming our variables in our Sass files? We could just go down a route like `$color-alpha: #ff0;`, which works absolutely fine. However we can get a bit more clever about it. Sass comes with really powerful features like arrays, functions and loops, and with a combination of those we can create a smarter way of referencing our colours throughout our stylesheets.
 
 So to start we need an array (Sass list) of our colour palette(s). I've added two different palettes below:
 
