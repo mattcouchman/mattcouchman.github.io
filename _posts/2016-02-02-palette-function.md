@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Managing brand colours and palettes in large scale applications using Sass"
-date:   2016-02-02 20:14:12
+date:   2016-02-02 18:14:00
 description: Sass palette function for working with color variables and palettes.
 ---
 
