@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Website bitches!"
+title:  "New Website!"
 date:   2016-01-30 16:00:00
 description: A long overdue update to my website
 ---
