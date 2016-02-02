@@ -5,6 +5,8 @@ layout: default
 
     <p><a class="link link--reverse" href="{{ site.url }}">&laquo; Home</a></p>
     <h3 class="post-title" itemprop="name headline">{{ page.title }}</h3>
+    <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+
     {{ content }}
 
     <div class="disqus">

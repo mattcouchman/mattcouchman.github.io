@@ -19,22 +19,34 @@ header {
     }
 }
 
+$readability-max: 46rem;
+
 @media (min-width: 46rem) {
 	$sidebar-width: 36%;
-	$readability-max: 46rem;
 
 	header {
 		position: fixed;
 		width: $sidebar-width;
 		height: 100%;
 		border-bottom: 10px solid $color-alpha;
-		max-width: $readability-max;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 	section {
 		display: inline-block;
 		width: (100 - $sidebar-width);
 		margin-left: $sidebar-width;
 		max-width: $readability-max;
+	}
+}
+
+@media (min-width: 60rem) {
+	$sidebar-width: 25%;
+
+	header {
+		width: $sidebar-width;
+	}
+	section {
+		width: (100 - $sidebar-width);
+		margin-left: $sidebar-width;
 	}
 }
