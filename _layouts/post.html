@@ -5,7 +5,10 @@ layout: default
 
     <p><a class="link link--reverse" href="{{ site.url }}">&laquo; Home</a></p>
     <h3 class="post-title" itemprop="name headline">{{ page.title }}</h3>
-    <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+    <div>
+        <div class="post-title-divider"></div>
+    </div>
+    <p class="post-details">Posted {{ page.date | date: "%b %-d, %Y" }} by <a href="http://twitter.com/mattcouchman">Matt</a></p>
 
     {{ content }}
 

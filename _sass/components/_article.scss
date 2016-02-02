@@ -15,9 +15,25 @@ article {
             text-decoration: none;
             transition: all linear .1s;
             &:hover {
-                background: $color-black;
-                color: $color-alpha;
+                color: $color-black;
             }
         }
     }
+}
+
+.post-title {
+    padding-bottom: 0;
+    margin-bottom: $spacing;
+}
+
+.post-details {
+    font-size: .9rem;
+}
+
+.post-title-divider {
+    display: inline-block;
+    width: 40%;
+    height: 5px;
+    background: $color-black;
+    margin-bottom: $spacing-small;
 }

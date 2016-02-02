@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  "Sass color palette function"
-date:   2016-02-02 17:14:12
+title:  "Managing brand colours and palettes in large scale applications using Sass"
+date:   2016-02-02 20:14:12
 description: Sass palette function for working with color variables and palettes.
 ---
 
-When it comes to creating a Sass structure for large applications I always wonder about best practices in terms of naming the colours and palettes. I generally tend to avoid actual colour names, to guard against future changes to brand colours.
+When it comes to structuring Sass in large applications it's difficult to come up with a solution in terms of best practices and naming conventions for colours and palettes. In general, I tend to avoid actual colour names, to guard against future changes to brand colours.
 
-For example, if we have a website consisting of 100s of pages and classes such as `.bg-blue`, what happens when the company decides to rebrand to red? We have to go through all the pages and change `.bg-blue` to `.bg-red` - not ideal.
+For example, if we have a website consisting of 100s of pages and classes (such as `.bg-blue`), what happens when the company decides to rebrand to red? We have to go through all of the markup and change `.bg-blue` to `.bg-red`, or just explain to newer developers that `.bg-blue` actually means red now... not ideal.
 
-Likewise in your Sass files, you would have to root through all your files to replace `$blue` with `$red`.
+Likewise in your Sass files, you would have to go through all of your files to replace `$blue` with `$red`.
 
 <!--excerpt-->
 
-So I usually en up calling my brand colours something abstract, like `.bg-alpha`. That way, we can make 'alpha' any colour we want, without it impacting the CSS or markup.
+To get around this I usually end up naming my colour variables something abstract, like 'alpha'. That way, we can make 'alpha' any colour we want, without it impacting the CSS or markup if we decide to change the colour at a later date.
 
-But recently I've been thinking about how we can be a bit more clever in terms of naming both our colours and colour palettes. So how do we go about naming our variables in our Sass files? We could just go down a route like `$color-alpha: #ff0;`, which works absolutely fine. However we can get a bit more clever about it. Sass comes with really powerful features like arrays, functions and loops, and with a combination of those we can create a smarter way of referencing our colours throughout our stylesheets.
+So recently I've been thinking about how we can be a bit more clever in terms of naming both our colours and colour palettes. Sass is a great tool, and it comes with some really powerful features that we're used to using every day in other programming languages - including functions. This is a function that I wrote in Sass to allow us to reference colours by their palette and shade. I'll explain more below.
 
 So to start we need an array (Sass list) of our colour palette(s). I've added two different palettes below:
 
@@ -94,4 +94,4 @@ And that's our function done. We can then reference colours from our palette(s) 
 
 Then we can change our main brand colour to whatever we want without having an impact on our stylesheets or variables.
 
-You can see the whole thing over on [http://codepen.io/mattcouchman/pen/bEjNJV?editors=0100](CodePen).
+You can see the whole thing over on [CodePen](http://codepen.io/mattcouchman/pen/bEjNJV?editors=0100) or let me know what you think on [Twitter](http://twitter.com/mattcouchman)!

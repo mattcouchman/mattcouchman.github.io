@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Another approach to BEM"
-date:   2015-09-28 20:00:00
+date:   2015-12-28 20:00:00
 description: A different approach to BEM
 ---
 
