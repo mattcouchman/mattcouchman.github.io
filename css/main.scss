@@ -6,19 +6,9 @@
 @import 'settings';
 
 /** Base styles */
+@import 'base/icons';
 @import 'base/reset';
 @import 'base/typography';
 
 /** Component styles */
-@import 'components/header';
-@import 'components/footer';
-@import 'components/section';
-@import 'components/article';
-@import 'components/link';
-@import 'components/profile';
-@import 'components/syntax-highlighting';
-
-/** Utilities */
-.u-color-alpha {
-    color: $color-alpha;
-}
+@import 'components/screen';

@@ -2,12 +2,16 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-    <article>
-        <h3>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
-        {{ post.excerpt }}
-        <p><a class="link link--reverse" href="{{ post.url }}">Read more &raquo;</a></p>
-    </article>
-{% endfor %}
+<div class="screen">
+	<div class="screen__inner">
+		<div class="screen__text">
+            <p>Hello. I'm Matt, a front end web developer based in Birmingham, UK with 10 years experience working with companies of all sizes in both the UK and Australia.</p>
+            <p>Engineering Lead at <a href="//383project.com" target="_blank">383</a></p>
+            <p class="screen__links">
+                <a href="//twitter.com/mattcouchman" target="_blank"><i class="icon-twitter"></i></a>
+                <a href="//github.com/mattcouchman" target="_blank"><i class="icon-github"></i></a>
+                <a href="//codepen.io/mattcouchman" target="_blank"><i class="icon-codepen"></i></a>
+            </p>
+		</div>
+	</div>
+</div>

@@ -1,16 +1,11 @@
 /** Colors */
-$blue:          #59ABE3;
-$blue-dark:     #2980b9;
-
-$red:           #e74c3c;
-$red-dark:      #c0392b;
 
 $color-black:   #333;
 $color-white:   #fff;
-$color-alpha:   $blue;
-$color-beta:    $red-dark;
+$color-alpha:   #22313F;
+$color-beta:    #52B3D9;
 
 /** Spacing */
-$spacing:       1.4rem;
+$spacing:       20px;
 $spacing-large: $spacing * 2;
 $spacing-small: $spacing / 2;
