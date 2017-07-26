@@ -38086,13 +38086,13 @@ var Card = function (_React$Component) {
 			var data = this.props.data;
 			var regionImage = function regionImage() {
 				if (data.region == 'Caribbean') {
-					return '/img/caribbean.jpg';
+					return '/8024/img/caribbean.jpg';
 				} else if (data.region == 'Canary Islands') {
-					return '/img/canary-islands.jpg';
+					return '/8024/img/canary-islands.jpg';
 				} else if (data.region == 'Mediterranean') {
-					return '/img/mediterranean.jpg';
+					return '/8024/img/mediterranean.jpg';
 				} else {
-					return '/img/caribbean.jpg';
+					return '/8024/img/caribbean.jpg';
 				}
 			};
 
