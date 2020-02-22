@@ -1,4 +1,0 @@
-- Pa11y accessibility dashboard
-- Performance dashboard
-- DSS styleguide
-- Pure CSS modals/accordions etc
