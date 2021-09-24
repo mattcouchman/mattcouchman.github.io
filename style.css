@@ -53,6 +53,7 @@ main {
 h1 {
   color: rgba(246, 174, 45, 1);
   font-size: 4rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
